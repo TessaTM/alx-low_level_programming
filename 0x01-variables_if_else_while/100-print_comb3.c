@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+/**
+ * main - combinations of 2 digits
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int n1, n2;
+
+	for (n1 = 48; n1 < 57; n1++)
+	{
+	for (n2 = 49 ; n2 <= 57; n2++)
+	{
+	if (n1 != n2)
+	{
+	putchar(n1);
+	putchar(n2);
+	if (n1 == 56 && n2 == 57)
+	continue;
+	putchar(',');
+	putchar(' ');
+	}
+	}
+	}
+	putchar('\n');
+	return (0);
+}
