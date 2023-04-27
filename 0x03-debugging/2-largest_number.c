@@ -28,17 +28,9 @@ int largest_number(int a, int b, int c)
 	{
 		largest = b;
 	}
-	else if (c > a && (a > b || a == b))
-	{
-		largest = c;
-	}
-	else  if (c > b && (b > a || b == a))
-	{
-		largest = c;
-	}
 	else
 	{
-		printf("They are all equal\n");
+		largest = c;
 	}
 
 	return (largest);
